@@ -1,26 +1,2 @@
-json 各式範例
-{
-  "id": "celtx_2025_03_28_08_on_the_nose_dialogue__Step6_Details", // 卡片唯一ID（單步驟版會帶 __StepX 後綴避免重複）
-  "type": "mistake",                                              // 卡片類型：mistake / checklist_section ...
-  "title": "On-the-Nose Dialogue",                                 // 卡片標題（檢索/顯示用）
-  "category": "details/dialogue",                                  // 分類（用於過濾/分群）
-  "pipeline_step": "Step6_Details",                                // 此卡只屬於哪一步（你用來 filter 不跳步）
-  "pipeline_steps": ["Step6_Details"],                             // 單步驟版固定只有一個；保留是為了兼容舊資料/工具
-  "severity": 3,                                                   // 嚴重程度（可選；越小越致命或越重要，視你們定義）
-  "content": "Definition / summary text ...",                      // 主要可檢索內容（建議是英文、精煉、可命中關鍵詞）
-  "items": null,                                                   // checklist 才有：一串檢核問題；mistake 通常是 null
-  "symptoms": ["..."],                                             // mistake 常見症狀（用來從現象→定位問題）
-  "root_cause": "...",                                             // mistake 常見根因（用來解釋為什麼會發生）
-  "fix": ["...","..."],                                            // 對策/改法（RAG 最常被引用的部分）
-  "diagnostic_questions": null,                                    //（可選）你想讓 AI 先問使用者的診斷問題
-  "tags": "mistake,dialogue,subtext",                              //（建議存成字串）方便搜尋或日後統計
-  "source": {                                                      // 來源資訊（引用/可追溯）
-    "name": "Celtx Blog",                                          // 來源網站/書名
-    "title": "10 Common Screenwriting Mistakes (and How to Fix Them)", // 來源文章標題
-    "url": "https://blog.celtx.com/...",                           // 來源連結
-    "published_date": "2025-03-28",                                // 出版日期
-    "retrieved_at": "2025-12-16",                                  // 你抓取整理的日期
-    "ref": "..."                                                   // 內部引用key（可用於 UI 顯示/引用格式）
-  },
-  "source_step_origin": "celtx_2025_03_28_08_on_the_nose_dialogue"  //（只有展開卡會有）原始跨步驟卡的 id
-}
+query_cli.py :查詢介面.  
+json example.txt : 資料庫各式說明
